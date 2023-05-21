@@ -1,20 +1,20 @@
 const config = {
-  content: [
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-  ],
-  darkMode: 'media',
-  theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
+    content: [
+        './src/components/**/*.{js,ts,jsx,tsx}',
+        './src/pages/**/*.{js,ts,jsx,tsx}',
+    ],
+    darkMode: 'media',
+    theme: {
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+        },
+        extend: {},
     },
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+    variants: {
+        extend: {},
+    },
+    plugins: [],
 };
 
 module.exports = config;
