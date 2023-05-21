@@ -1,32 +1,10 @@
-# [M4TT72 | Terminal](https://term.m4tt72.com)
+# SeanKyer.com
 
-A terminal style website
+A terminal style website forked from m4tt7s (https://term.m4tt72.com)
 
-![screenshot](/docs/screenshot.png)
-
-## why?
-
-TL;DR: why not?
-
-I'm a Linux enthusiast, and I tried creating something that will allow 'normal' people to have a glimpse at my world.
+I like using Linux and I wanted my website to not be so basic. So I forked from a good template and a suite of my own commands so the viewer can learn more about me.
 
 ## Quick Start
-
-### Using docker (recommended)
-
-```bash
-docker run -d --name terminal -p 3000:3000 m4tt72/terminal
-```
-
-If you want to run with custom configuration, make sure you have a copy of `config.json` then mount in the container:
-
-```bash
-docker run -d \
-  --name terminal \
-  -p 3000:3000 \
-  -v `pwd`/config.json:/data/config.json \
-  m4tt72/terminal
-```
 
 ### Using npm/yarn
 
@@ -48,35 +26,8 @@ yarn build
 yarn start
 ```
 
-## Configuration
+## Deploying
 
-Here's a sample of the `config.json` file:
+### yarn export
 
-```json
-{
-  "bioUrl": "https://raw.githubusercontent.com/m4tt72/m4tt72/master/README.md",
-  "social": {
-    "instagram": "m4tt72",
-    "github": "m4tt72",
-    "linkedin": "yassinefathi"
-  },
-  "theme": "gruvboxdark" // list of themes available in themes.json
-}
-```
-
-## Themes
-
-![themes](/docs/screenshot.gif)
-
-[Here's](/docs/themes) a list of available themes.
-
-
-## Contributing
-
-Please feel free to pull requests or log issues.
-
-Thanks!
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=m4tt72/terminal&type=Date)](https://star-history.com/#m4tt72/terminal&Date)
+Run `yarn export` to generate the static site. Copy the files from `out/` to your webhost.

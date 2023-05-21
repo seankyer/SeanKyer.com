@@ -9,22 +9,14 @@ export const getProjects = async () => {
     return data;
 };
 
-export const getBio = async () => {
-    const { data } = await axios.get(config.bioUrl);
-
-    return data;
-};
-
 export const getWeather = async (city: string) => {
     const { data } = await axios.get(`https://wttr.in/${city}?ATm`);
 
     return data;
 };
 
-export const getQuote = async () => {
-    const { data } = await axios.get('https://api.quotable.io/random');
+export const getIP = async () => {
+    const { data } = await axios.get('https://api.ipify.org/?format=json');
 
-    return {
-        quote: `“${data.content}” — ${data.author}`,
-    };
+    return data;
 };

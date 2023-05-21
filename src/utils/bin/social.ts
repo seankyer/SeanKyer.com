@@ -17,3 +17,9 @@ export const linkedin = async (args: string[]): Promise<string> => {
 
     return 'Opening linkedin...';
 };
+
+export const imdb = async (args: string[]): Promise<string> => {
+    window.open(`https://www.imdb.com/name/${config.social.imdb}/`);
+
+    return 'Opening IMDB...';
+};

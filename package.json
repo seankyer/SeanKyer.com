@@ -1,15 +1,11 @@
 {
   "name": "terminal",
-  "version": "2.14.4",
+  "version": "3.0.1",
   "license": "MIT",
   "author": {
     "name": "Yassine Fathi",
     "url": "https://m4tt72.com",
     "email": "hi@m4tt72.com"
-  },
-  "funding": {
-    "type": "Paypal",
-    "url": "https://paypal.me/y4ss1n3"
   },
   "repository": {
     "type": "git",
@@ -20,10 +16,8 @@
     "build": "next build",
     "dev": "next dev",
     "next": "next",
-    "preexport": "next build",
     "export": "next export",
-    "lint": "eslint .",
-    "prepare": "husky install"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@m4tt72/matomo-tracker-react": "^0.6.2",
