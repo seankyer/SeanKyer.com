@@ -13,7 +13,7 @@ export const date = async (args: string[]): Promise<string> => {
 
 export const repo = async (args?: string[]): Promise<string> => {
     setTimeout(function () {
-        window.open('https://github.com/m4tt72/terminal', '_blank');
+        window.open('https://github.com/seankyer/seankyer.com', '_blank');
     }, 1000);
 
     return 'Opening repository...';
@@ -26,17 +26,11 @@ export const banner = (args?: string[]): string => {
 ╚█████╗░█████╗░░███████║██╔██╗██║  █████═╝░░╚████╔╝░█████╗░░██████╔╝
 ░╚═══██╗██╔══╝░░██╔══██║██║╚████║  ██╔═██╗░░░╚██╔╝░░██╔══╝░░██╔══██╗
 ██████╔╝███████╗██║░░██║██║░╚███║  ██║░╚██╗░░░██║░░░███████╗██║░░██║
-╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝  ╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝ v${packageJson.version}
+╚═════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚══╝  ╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝.com 
+v${packageJson.version}, a clone of m4tt72's 'terminal' site.
 
-Welcome to seankyer.com
+Welcome to my website!
 
 Type 'help' to see list of available commands.
-
---
-Forked from m4tt72 'terminal'. Type 'repo' to check out the project.
-
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
---
 `;
 };
